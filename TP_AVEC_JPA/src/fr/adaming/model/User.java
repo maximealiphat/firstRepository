@@ -1,7 +1,32 @@
 package fr.adaming.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
+@Entity
+@Table
+@NamedQueries({
+	@NamedQuery(name="getAlluser", query="SELECT u FROM User as u"),
+	@NamedQuery(name="getUserById", query="SELECT u from User u WHERE u.id_user=:id"),
+	@NamedQuery(name="deleteUser", query="DELETE from User WHERE id_user=:id"),
+	@NamedQuery(name="updateUser", query="UPDATE User u set u.nom=:no, u.prenom=:pre, u.mail=:mai, u.password=:pass WHERE u.id_user=:id")
+})
+
+
+
+
+
+
 public class User {
+	
 	// Attributes
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id_user;
 	private String nom;
 	private String prenom;

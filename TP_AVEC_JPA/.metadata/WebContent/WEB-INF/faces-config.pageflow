@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14757418241360" configfile="/10_TPAVECJSF/WebContent/WEB-INF/faces-config.xml">
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14757418241360" configfile="/TP_AVEC_JPA/WebContent/WEB-INF/faces-config.xml">
   <nodes xsi:type="pageflow:PFPage" name="connexion.xhtml" x="122" y="370" id="pf14757506426191" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14757506426192 pf14757506426193" path="connexion.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="ErrorAuthentification.xhtml" x="338" y="178" id="pf14757506426194" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14757506426192" path="ErrorAuthentification.xhtml"/>
   <nodes xsi:type="pageflow:PFPage" name="Acceuil.xhtml" x="338" y="562" id="pf14757506426205" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14757506426193" path="Acceuil.xhtml"/>
-  <links id="pf14757506426192" target="pf14757506426194" source="pf14757506426191" outcome="authErreur"/>
-  <links id="pf14757506426193" target="pf14757506426205" source="pf14757506426191" outcome="acceuil"/>
+  <links id="pf14757506426192" target="pf14757506426194" source="pf14757506426191"/>
+  <links id="pf14757506426193" target="pf14757506426205" source="pf14757506426191"/>
 </pageflow:Pageflow>

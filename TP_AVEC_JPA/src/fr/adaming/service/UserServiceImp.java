@@ -1,8 +1,7 @@
 package fr.adaming.service;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import fr.adaming.dao.AgentDaoImp;
 import fr.adaming.dao.UserDaoImp;
 import fr.adaming.model.User;
 
@@ -10,7 +9,7 @@ public class UserServiceImp implements IUserService{
 	UserDaoImp userDao = new UserDaoImp();
 	
 	@Override
-	public ArrayList<User> getAllUserService() {
+	public List<User> getAllUserService() {
 		return userDao.getAllUserDao();
 	}
 
